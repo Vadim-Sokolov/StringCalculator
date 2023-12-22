@@ -10,7 +10,7 @@ public class StringCalculatorTest {
     public final StringCalculator calculator = new StringCalculator();
 
     @Test
-    void whenEmplyString_shouldReturnZero() throws StringCalculatorException {
+    void whenStringIsEmpty_shouldReturnZero() throws StringCalculatorException {
         // GIVEN
         var expected = 0;
 
@@ -22,7 +22,7 @@ public class StringCalculatorTest {
     }
 
     @Test
-    void whenStringIsAnInteger_shouldReturnTheInteger() throws StringCalculatorException {
+    void whenStringContainsAnInteger_shouldReturnTheInteger() throws StringCalculatorException {
         // GIVEN
         var expected = 1;
 
@@ -34,7 +34,7 @@ public class StringCalculatorTest {
     }
 
     @Test
-    void whenContainsSeveralIntegers_shouldReturnTheSum() throws StringCalculatorException {
+    void whenStringContainsSeveralIntegers_shouldReturnTheSum() throws StringCalculatorException {
         // GIVEN
         var expected = 795;
 
