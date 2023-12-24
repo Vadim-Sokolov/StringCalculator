@@ -46,7 +46,7 @@ public class StringCalculatorTest {
     }
 
     @Test
-    void add_shouldTrimNewLines() throws StringCalculatorException {
+    void shouldIgnoreNewLines() throws StringCalculatorException {
         // GIVEN
         var expected = 6;
 

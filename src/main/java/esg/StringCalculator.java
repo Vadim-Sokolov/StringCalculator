@@ -46,7 +46,7 @@ public class StringCalculator {
     private void findNegativeNumbers(String[] numbersArray) throws StringCalculatorException {
 
         var negativeNumbers = Arrays.stream(numbersArray)
-                .map(String::trim)
+                .map(s -> s.replaceAll("\\s", ""))
                 .filter(num -> num.startsWith("-"))
                 .collect(Collectors.joining(","));
 
